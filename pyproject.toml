@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thai-voice-command"
+version = "0.1.0"
+description = "Thai voice commands made simple: wake phrase, command routing with safe fuzzy matching, and lightweight VAD. Works with any speech recognizer."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "vasinth0083" }]
+keywords = ["thai", "voice", "speech", "asr", "wake-word", "assistant", "nlp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: Thai",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/vasinth0083/thai-voice-command"
+Issues = "https://github.com/vasinth0083/thai-voice-command/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
