@@ -2,6 +2,7 @@ name: publish
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:  # manual "Run workflow" button in the Actions tab
 jobs:
   pypi:
     runs-on: ubuntu-latest
